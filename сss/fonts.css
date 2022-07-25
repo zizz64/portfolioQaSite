@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "birthstone";
+  src: url("/fonts/bsb/bsb-r.eot");
+  src: url("/fonts/bsb/bsb-r.eot?#iefix") format("embedded-opentype"), url("/fonts/bsb/bsb-r.woff") format("woff"), url("/fonts/bsb/bsb-r.ttf") format("truetype"), url("/fonts/bsb/bsb-r.svg#birthstone") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

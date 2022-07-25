@@ -1,0 +1,145 @@
+@import "fonts.sass"
+
+*
+    box-sizing: border-box
+
+html, body 
+    font-size: 16px
+    a
+        text-decoration: none
+
+h2
+    font-size: 2.85rem
+
+$main_c: #3A3A3A
+$odd_c: #F6F6F6
+$even_c: #fff
+$active_link: #8B8B8B
+
+.odd
+    background-color: $odd_c   
+
+.even
+    background-color: $even_c
+
+main
+    position: relative
+    display: flex
+    flex-direction: column
+    height: 100vh
+    width: 100%
+
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2.375rem 4.375rem
+
+.menu__logo a    
+    color: $main_c    
+    font:
+        family: 'birthstone'
+        size: 1.87rem
+    transition: .3s  
+    &:hover
+        color: $main_c
+
+.menu__nav
+    display: flex
+
+.menu__item
+    font:
+        family: 'Roboto', sans-serif
+        weight: 700
+        size: 1.14rem
+    text:
+        transform: uppercase
+    color: $main_c
+    margin-left: 2.875rem
+    transition: 0.3s
+    &:hover
+        cursor: pointer
+        color: $active_link 
+
+.menu__nav a
+    position: relative
+
+.menu__nav a::after 
+    position: absolute
+    transition: 0.3s
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    width: 0%
+    content: '.'
+    color: transparent
+    background: $active_link
+    height: 1px
+
+.menu__nav a:hover:after 
+  width: 100%
+
+.menu__item_active
+    color: $active_link
+    margin-left: 0              
+
+.menu__nav
+    display: flex
+    align-items: center
+
+.bio-wrapper
+    position: relative    
+    display: flex
+    justify-content: space-between
+    
+    padding-left: 3.125rem
+    height: 100% 
+
+.bio__text
+    display: flex
+    flex-direction: column
+    font-family: 'Roboto', sans-serif
+    font-weight: 700    
+    justify-content: center
+
+.bio__text h1
+    font-size: 4.37rem          
+    color: $main_c
+    line-height: 5.5rem
+    margin-bottom: 1.06rem
+    text-transform: uppercase
+
+.bio__text p:nth-child(1) 
+    color: $active_link
+    font-size: 1rem
+    margin: 0
+    text-transform: uppercase
+
+.bio__text p:nth-child(3) 
+    color: $active_link
+    font-size: 1rem
+    margin-bottom: 2.06rem
+  
+    // padding-top: 4.375rem   
+
+.work__btn 
+    width: fit-content
+    display: inline-block
+    border-radius: 5px
+    background-color: $main_c
+    padding: 1.7rem 4.8rem
+    cursor: pointer
+    transition: 0.3s
+    a
+        color: #fff
+        text-transform: uppercase
+        &:hover
+            color: #fff
+    &:hover
+        background-color: $active_link
+    
+    
+
+
+    

@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./сss/main.css">
-    <link rel="stylesheet" href="./fonts/css/fonts.css">
+    <link rel="stylesheet" href="./css/fonts.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Nikita Korovnikov QA</title>
 </head>
 <body>  
     <div class="fluid-container odd">
-        <main id="main-wrapper" class="container odd">
+        <main class="container p-0 odd">
             <header class="fluid-container">
                 <nav class="menu">
                     <div class="menu__logo">
-                       <a href="#main-wrapper">NK</a>
+                       <a href="#">NK</a>
                     </div>
                     <div class="menu__nav">
                         <a class="menu__item menu__item_active">Главная</a>
@@ -23,30 +23,24 @@
                         <a class="menu__item">Навыки</a>
                         <a class="menu__item">Мои работы</a> 
                         <a class="menu__item">Контакты</a>      
-                        <a href="#" class="menu-btn"><span></span></a>                            
+                        <!--<a href="#" class="menu-btn"><span></span></a>--><!--Меню-бургер-->
                     </div>  
                 </nav>
-            </header>   
-            <div class="bio">         
+            </header>    
+            <div class="bio-wrapper">
                 <div class="bio__text">
-                    <div class="bio__uptitle">
-                        hello!
-                    </div>
-                    <div class="bio__title">
-                        i am qa-engineer
-                    </div>
-                    <div class="bio__subtitle">
-                        I am a QA-engineer and this is my portfolio site. Here you will find<br>
-                        information about me, such as. I suggest you take a look at my work:
-                    </div>   
+                    <p>Привет!</p>
+                    <h1>я QA-инженер</h1>
+                    <p>И это мой сайт-портфолио. Здесь вы найдете информацию обо мне,<br> мои навыки и знания в тестировании.<br> Предлагаю Вам ознакомиться с моими работами:</p>
                     <div class="work__btn">
-                        <a href="">My work</a>
-                    </div>             
+                        <a href="#">Мои работы</a>
+                    </div>   
                 </div>
-                <div class="main__photo"><img src="img/photo_me.png" alt="me" width="452" height="847"></div>
-                
-            </div>  
+                <div class="bio__img d-flex align-items-end">
+                    <img src="img/photo_me.png" alt="me">
+                </div>  
+            </div>                                              
         </main>
-    </div> 
+    </div>     
 </body>
 </html>

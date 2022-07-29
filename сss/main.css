@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "robotoregular";
+  src: url("/fonts/roboto/robotoregular/rr.eot");
+  src: url("/fonts/roboto/robotoregular/rr.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto/robotoregular/rr.woff") format("woff"), url("/fonts/roboto/robotoregular/rr.ttf") format("truetype"), url("/fonts/roboto/robotoregular/rr.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "birthstone";
   src: url("/fonts/bsb/bsb-r.eot");
   src: url("/fonts/bsb/bsb-r.eot?#iefix") format("embedded-opentype"), url("/fonts/bsb/bsb-r.woff") format("woff"), url("/fonts/bsb/bsb-r.ttf") format("truetype"), url("/fonts/bsb/bsb-r.svg#birthstone") format("svg");
@@ -12,6 +19,7 @@
 
 html, body {
   font-size: 16px;
+  font-family: "robotoregular", "birthstone";
 }
 html a, body a {
   text-decoration: none;
@@ -23,14 +31,14 @@ h2 {
 
 .odd {
   background-color: #F6F6F6;
+  height: 100vh;
 }
 
 .even {
-  background-color: #fff;
+  height: 100vh;
 }
 
 main {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +47,10 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  width: 100%;
+}
+
+header {
+  margin-bottom: 5rem;
 }
 
 .menu {
@@ -74,8 +85,7 @@ main {
 }
 
 .menu__item {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: "robotoregular", sans-serif;
   font-size: 1.14rem;
   text-transform: uppercase;
   color: #3A3A3A;
@@ -83,34 +93,12 @@ main {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
 }
 .menu__item:hover {
   cursor: pointer;
   color: #8B8B8B;
-}
-
-.menu__nav a {
-  position: relative;
-}
-
-.menu__nav a::after {
-  position: absolute;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: #8B8B8B;
-  height: 1px;
-}
-
-.menu__nav a:hover:after {
-  width: 100%;
 }
 
 .menu__item_active {
@@ -128,14 +116,12 @@ main {
 }
 
 .bio-wrapper {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 3.125rem;
   height: 100%;
 }
 
@@ -148,10 +134,12 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 3.125rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
 }
 
 .bio__text h1 {
@@ -179,7 +167,6 @@ main {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  display: inline-block;
   border-radius: 5px;
   background-color: #3A3A3A;
   padding: 1.7rem 4.8rem;
@@ -191,10 +178,163 @@ main {
 .work__btn a {
   color: #fff;
   text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
 }
 .work__btn a:hover {
   color: #fff;
 }
 .work__btn:hover {
   background-color: #8B8B8B;
+}
+
+.title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  padding-top: 2.4375rem;
+  margin-bottom: 5.5rem;
+}
+.title-section h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.about__info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 5.5rem 2.375rem;
+}
+
+.about__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.squar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 581px;
+  height: auto;
+  background-color: #BEBEBE;
+}
+
+.third {
+  width: 100%;
+  height: 33%;
+  background-color: #3A3A3A;
+}
+
+.first {
+  width: 100%;
+  height: 33%;
+  background-color: #8B8B8B;
+}
+
+.about__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 9.3125rem;
+}
+.about__right p {
+  color: #3A3A3A;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+
+.skills__text p {
+  color: #3A3A3A;
+  font-weight: 500;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 6.25rem 0;
+  margin-bottom: 6.25rem;
+}
+
+.footer__button {
+  border: none;
+  background-color: transparent;
+  font-family: "robotoregular", sans-serif;
+  font-size: 1.125rem;
+  color: #3A3A3A;
+  font-weight: 700;
+}
+
+.fa-telegram {
+  color: #2AABEE;
+  padding-right: 0.625rem;
+}
+
+.fa-envelope {
+  color: #EA4335;
+  padding-right: 0.625rem;
+}
+
+.fa-vk {
+  color: #699BF7;
+  padding-right: 0.625rem;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #3A3A3A;
+  font-family: "robotoregular", sans-serif;
 }

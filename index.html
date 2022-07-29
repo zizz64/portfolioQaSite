@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./сss/main.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <script src="https://kit.fontawesome.com/3d191f3552.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Nikita Korovnikov QA</title>
 </head>
 <body>  
     <div class="fluid-container odd">
-        <main class="container p-0 odd">
-            <header class="fluid-container">
+        <main class="container p-0">
+            <header>
                 <nav class="menu">
                     <div class="menu__logo">
                        <a href="#">NK</a>
@@ -36,11 +38,92 @@
                         <a href="#">Мои работы</a>
                     </div>   
                 </div>
-                <div class="bio__img d-flex align-items-end">
+                <div class="bio__img d-flex">
                     <img src="img/photo_me.png" alt="me">
                 </div>  
             </div>                                              
-        </main>
-    </div>     
+        </main>        
+    </div> 
+    <section class="container p-0 even">
+        <div class="about">
+            <div class="title-section">
+            <h2>Обо мне</h2>
+            </div>
+            <div class="about__info">
+                <div class="about__left">
+                     <div class="squar">
+                        <div class="first"></div>
+                        <div class="third"></div>
+                     </div>   
+                </div>
+                <div class="about__right">                                       
+                    <p>Меня зовут Никита, мне 22 года, живу в г. Санкт-Петербурге.</br></br>В июле 2022г. успешно прошел курсы по тестированию под руководством опытного тестировщика и ментора - Николая </br>Кротова!</br></br>На данный момент все свое время уделяю теории и практике,</br> а также закреплению изученного материала.</br></br>Софт-скиллы: добросовестно отношусь к поставленным задачам, самостоятелен в их решениях. Отзывчивый и дружелюбный, </br>умею находить общий язык с людьми, решать конфликты и идти </br>на компромисс.</br></br>Мои приоритеты - опыт и знания. Постоянно работаю над собой </br>и всестороне развизваюсь.</br></br>Крайне заинтересован в работе над проектами для дальнейшего профессионального роста и обеспечения высокого качества продукта.</p>
+                </div> 
+            </div>
+        </div>
+    </section>  
+    <section class="fluid-container odd">
+        <div class="container p-0 odd">
+            <div class="skills">
+                <div class="title-section">
+                    <h2>Навыки</h2>
+                </div>
+                <div class="skills__text">
+                    <p>Понимаю:</br>
+                        - Техники тест-дизайна;</br>
+                        - Теорию тестирования;</br>
+                        - Клиент-серверную архитектуру;</br>
+                        - Разницу между REST и SOAP API;</br>
+                        - HTML5, CSS3, SASS, Bootstrap, JS - чтение кода;</br>
+                        - Протоколы, методы HTTP/ HTTPS запросов/ ответов, статусы кодов состояния;</br>
+                        - Agile-методологии SCRUM и Kanban;</br>
+                        </br>
+                        Занимался:</br>
+                        - Составлением тестовой документации (согласно требованиям): тест-кейсы, чек-листы,</br>   
+                        тест-планы, баг-репорты;</br>
+                        - Тестированием API (Postman - созданием запросов, коллекций; работа со Swagger-документацией,</br> 
+                        отличаю JSON от XML, curl запросы);</br>
+                        - Работой с простыми SQL запросами (SELECT, JOIN, ORDER BY, DELETE, DROP, INSERT, Transact-SQL);</br>
+                        - Перехватом мобильного/ веб-трафика;</br>
+                        - Функциональным, кроссбраузерным, UI/ UX тестированием;</br>
+                    </br>
+                        Работаю в:</br>
+                        - Postman;</br>
+                        - Swagger;</br>
+                        - Fiddler;</br>
+                        - Jira;</br>
+                        - Figma;</br>
+                        - Git, Git Bush, Bitbucket;</br>
+                        - Android Studio;</br>
+                        - Visual Stuido Code.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <footer class="container p-0 d-flex flex-column">
+        <div class="title-section">
+            <h2>Контакты</h2>
+        </div>
+        <div class="footer__nav">
+            <button class="footer__button"><i class="fa-brands fa-telegram fa-2xl"></i>@korovnikovn</button>
+            <button class="footer__button"><i class="fa-solid fa-envelope fa-2xl"></i>nikw5346@gmail.com</button>
+            <button class="footer__button"><i class="fa-brands fa-vk fa-2xl"></i>@korovnikovn56</button>
+        </div>
+        <div class="author">
+            <p>(c) Nikita Korovnikov</p>
+        </div>
+    </footer>
+    <script>
+        // $(document).ready(function(){
+        //     $('.fa-telegram').hover(
+        //         function() {
+        //             $( this ).removeClass('fa-shake');
+        //         }, function() {
+        //             $( this ).addClass('fa-shake');
+        //         }
+        //     );
+        // });
+    </script>
 </body>
 </html>

@@ -1,129 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./сss/main.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <script src="https://kit.fontawesome.com/3d191f3552.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/jquery.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Nikita Korovnikov QA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="сss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/de7d127151.js" crossorigin="anonymous"></script>  
+    <script type="text/javascript" src="jquery.js"></script>    
+    <title>Nikita Korovnikov - QA engineer</title>
 </head>
-<body>  
+<body>
+    <img id="arrowup" src="/img/arrowup.png" alt="arrowup" width="60px" height="60px">
     <div class="fluid-container odd">
-        <main class="container p-0">
-            <header>
-                <nav class="menu">
-                    <div class="menu__logo">
-                       <a href="#">NK</a>
-                    </div>
-                    <div class="menu__nav">
-                        <a class="menu__item menu__item_active">Главная</a>
-                        <a class="menu__item">Обо мне</a>
-                        <a class="menu__item">Навыки</a>
-                        <a class="menu__item">Мои работы</a> 
-                        <a class="menu__item">Контакты</a>      
-                        <!--<a href="#" class="menu-btn"><span></span></a>--><!--Меню-бургер-->
-                    </div>  
-                </nav>
-            </header>    
-            <div class="bio-wrapper">
-                <div class="bio__text">
-                    <p>Привет!</p>
-                    <h1>я QA-инженер</h1>
-                    <p>И это мой сайт-портфолио. Здесь вы найдете информацию обо мне,<br> мои навыки и знания в тестировании.<br> Предлагаю Вам ознакомиться с моими работами:</p>
-                    <div class="work__btn">
-                        <a href="#">Мои работы</a>
-                    </div>   
+        <div class="container p-0">
+            <div class="wrapper__main">
+                <div class="main">
+                    <nav class="menu">
+                        <div class="menu__logo"><a href="#">NK</a></div>
+                        <div class="menu__nav">
+                            <a href="#" class="menu__item main__link">главная</a>
+                            <a href="#" class="menu__item about__link">обо мне</a>
+                            <a href="#" class="menu__item skills__link">навыки</a>
+                            <a href="https://github.com/zizz64" target="_blank" class="menu__item">мои работы<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" class="menu__item contact__link">контакты</a>
+                        </div>                        
+                        <div id="burger">
+                            <a href="#" id="menu-btn">
+                          <span></span>
+                            </a>
+                            <div id="menu__nav_mob" class="hidden">
+                                <a href="#" class="menu__item main__link">главная</a>
+                                <a href="#" class="menu__item about__link">обо мне</a>
+                                <a href="#" class="menu__item skills__link">навыки</a>
+                                <a href="https://github.com/zizz64" target="_blank" class="menu__item">мои работы</a>
+                                <a href="#" class="menu__item contact__link">контакты</a>
+                                <a href="#" id="close__menu_mob"><span></span></a>                                
+                            </div>                            
+                        </div>                        
+                    </nav> 
+                        <div class="main__text">
+                            <div class="left-side">  
+                                <div class="title__up">Привет!</div>
+                                <div class="title__main">я QA-инженер</div>
+                                <div class="titlle__subtitle">
+                                    <p>И это мой сайт-портфолио.</p> 
+                                    <p>Здесь вы найдете информацию обо мне, мои навыки и знания в тестировании.</p>
+                                    <p>Предлагаю Вам ознакомиться с моими работами:</p>
+                                </div>                                    
+                                <div class="work__btn">
+                                    <a href="https://github.com/zizz64" target="_blank">Мои работы<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>                                
+                            </div>
+                            <div class="right-side"></div>                            
+                        </div>
                 </div>
-                <div class="bio__img d-flex">
-                    <img src="img/photo_me.png" alt="me">
-                </div>  
-            </div>                                              
-        </main>        
-    </div> 
-    <section class="container p-0 even">
-        <div class="about">
-            <div class="title-section">
-            <h2>Обо мне</h2>
-            </div>
-            <div class="about__info">
-                <div class="about__left">
-                     <div class="squar">
-                        <div class="first"></div>
-                        <div class="third"></div>
-                     </div>   
-                </div>
-                <div class="about__right">                                       
-                    <p>Меня зовут Никита, мне 22 года, живу в г. Санкт-Петербурге.</br></br>В июле 2022г. успешно прошел курсы по тестированию под руководством опытного тестировщика и ментора - Николая </br>Кротова!</br></br>На данный момент все свое время уделяю теории и практике,</br> а также закреплению изученного материала.</br></br>Софт-скиллы: добросовестно отношусь к поставленным задачам, самостоятелен в их решениях. Отзывчивый и дружелюбный, </br>умею находить общий язык с людьми, решать конфликты и идти </br>на компромисс.</br></br>Мои приоритеты - опыт и знания. Постоянно работаю над собой </br>и всестороне развизваюсь.</br></br>Крайне заинтересован в работе над проектами для дальнейшего профессионального роста и обеспечения высокого качества продукта.</p>
-                </div> 
-            </div>
+            </div>        
         </div>
-    </section>  
-    <section class="fluid-container odd">
-        <div class="container p-0 odd">
-            <div class="skills">
-                <div class="title-section">
+    </div>
+    <div class="container p-0">
+        <section class="section__all about">
+            <div class="section__title">
+                <h2> Обо мне</h2>
+            </div>
+            <div class="row about__content">
+                <div class="col-md-6 p-0 firstcol">
+                    <div class="box"></div>
+                </div>
+                <div class="col-md-6 p-0 secondcol">
+                    <p>Меня зовут Никита, мне 22 года, живу в г. Санкт-Петербург.</p>
+                    <p>В июле 2022г. успешно прошел курсы по тестированию под руководством опытного тестировщика и ментора - Николая Кротова!</p>
+                    <p>На данный момент все свое время уделяю  теории и практики, а также закреплению изученного материала.</p>
+                    <p>Софт-скиллы: добросовестно отношусь к поставленным задачам, самостоятелен в их решениях. Очень отзывчивый и дружелюбный, умею находить общий язык с людьми, решать конфликты и идти на компромисс.</p>
+                    <p>Мои приоритеты - опыт и знания. Постоянно работаю над собой как умственно, так и физически.</p>
+                    <p>В будущем планирую обучаться автоматизации тестов.</p>
+                </div>
+            </div>          
+        </section>
+    </div>
+    <div class="fluid-container odd"> 
+        <div class="container p-0 skills">
+            <section class="section__all">
+                <div class="section__title">
                     <h2>Навыки</h2>
                 </div>
-                <div class="skills__text">
-                    <p>Понимаю:</br>
-                        - Техники тест-дизайна;</br>
-                        - Теорию тестирования;</br>
-                        - Клиент-серверную архитектуру;</br>
-                        - Разницу между REST и SOAP API;</br>
-                        - HTML5, CSS3, SASS, Bootstrap, JS - чтение кода;</br>
-                        - Протоколы, методы HTTP/ HTTPS запросов/ ответов, статусы кодов состояния;</br>
-                        - Agile-методологии SCRUM и Kanban;</br>
-                        </br>
-                        Занимался:</br>
-                        - Составлением тестовой документации (согласно требованиям): тест-кейсы, чек-листы,</br>   
-                        тест-планы, баг-репорты;</br>
-                        - Тестированием API (Postman - созданием запросов, коллекций; работа со Swagger-документацией,</br> 
-                        отличаю JSON от XML, curl запросы);</br>
-                        - Работой с простыми SQL запросами (SELECT, JOIN, ORDER BY, DELETE, DROP, INSERT, Transact-SQL);</br>
-                        - Перехватом мобильного/ веб-трафика;</br>
-                        - Функциональным, кроссбраузерным, UI/ UX тестированием;</br>
-                    </br>
-                        Работаю в:</br>
-                        - Postman;</br>
-                        - Swagger;</br>
-                        - Fiddler;</br>
-                        - Jira;</br>
-                        - Figma;</br>
-                        - Git, Git Bush, Bitbucket;</br>
-                        - Android Studio;</br>
-                        - Visual Stuido Code.
-                    </p>
+                <div class="row m-0 skills__content">
+                    <div class="skills__understand">
+                        <ul class="ul__title">
+                            <p>Понимаю:</p>
+                            <li>- Техники тест-дизайна;</li>
+                            <li>- Теорию тестирования;</li>
+                            <li>- Клиент-серверную архитектуру;</li>
+                            <li>- Разницу между REST и SOAP API;</li>
+                            <li>- HTML5, CSS3, SASS, Bootstrap, JS - чтение кода;</li>
+                            <li>- Протоколы, методы HTTP/ HTTPS запросов/ ответов, статусы кодов состояния;</li>
+                            <li>- Agile-методологии SCRUM и Kanban;</li>
+                        </ul>
+                     </div>
+                     <div class="skills__do">
+                        <ul class="ul__title">
+                            <p>Занимался:</p>
+                            <li>- Составлением тестовой документации (согласно требованиям): тест-кейсы, чек-листы, тест-планы, баг-репорты;</li>
+                            <li>- Тестированием API (Postman - создание запросов, коллекций; работа со Swagger-документацией, отличаю JSON от XML, curl запросы);</li>
+                            <li>- Работой с простыми SQL запросами (SELECT, JOIN, ORDER BY, DELETE, DROP, INSERT, Transact-SQL);</li>
+                            <li>- Перехватом мобильного/ веб-трафика;</li>
+                            <li>- Функциональным, кроссбраузерным, UI/ UX тестированием;</li>
+                        </ul>
+                    </div>
+                    <div class="skills__work">
+                        <ul>
+                            <p>Работаю в:</p>
+                            <li>- Postman;</li>
+                            <li>- Swagger;</li>
+                            <li>- Fiddler;</li>
+                            <li>- Jira;</li>
+                            <li>- TestRail;</li>
+                            <li>- Figma;</li>
+                            <li>- Git, Git Bush, Bitbucket;</li>
+                            <li>- Android Studio;</li>
+                            <li>- Visual Stuido Code.</li>
+                        </ul>
+                     </div>
+                </div>          
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="container p-0 footer__height">
+            <div class="footer">
+                <div class="section__title">
+                    <h2>Контакты</h2>
+                </div>
+                <div class="row footer__content d-flex justify-content-around">
+                    <div class="tg">
+                        <a href="https://t.me/korovnikovn" target="_blank"><i class="fa-brands fa-telegram fa-2xl"></i>@korovnikovn</a>
+                    </div>                
+                    <div class="gmail">
+                        <a href="mailto:nikw5346@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope fa-2xl"></i>nikw5346@gmail.com</a>
+                    </div>
+                    <div class="vk">
+                        <a href="https://vk.com/korovnikovn56" target="_blank"><i class="fa-brands fa-vk fa-2xl"></i>@korovnikovn56</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2022 Nikita Korovnikov.</p>
                 </div>
             </div>
         </div>
-    </section>  
-    <footer class="container p-0 d-flex flex-column">
-        <div class="title-section">
-            <h2>Контакты</h2>
-        </div>
-        <div class="footer__nav">
-            <button class="footer__button"><i class="fa-brands fa-telegram fa-2xl"></i>@korovnikovn</button>
-            <button class="footer__button"><i class="fa-solid fa-envelope fa-2xl"></i>nikw5346@gmail.com</button>
-            <button class="footer__button"><i class="fa-brands fa-vk fa-2xl"></i>@korovnikovn56</button>
-        </div>
-        <div class="author">
-            <p>(c) Nikita Korovnikov</p>
-        </div>
-    </footer>
-    <script>
-        // $(document).ready(function(){
-        //     $('.fa-telegram').hover(
-        //         function() {
-        //             $( this ).removeClass('fa-shake');
-        //         }, function() {
-        //             $( this ).addClass('fa-shake');
-        //         }
-        //     );
-        // });
-    </script>
+    </footer>   
+   <script src="./jquery/main.js"></script> 
 </body>
 </html>

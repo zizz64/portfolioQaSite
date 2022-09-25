@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="сss/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">  
-    <script src="https://kit.fontawesome.com/de7d127151.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/de7d127151.js" crossorigin="anonymous"></script>      
+    <link rel="stylesheet" href="сss/main.css">
     <script type="text/javascript" src="jquery.js"></script>    
     <title>Nikita Korovnikov - QA engineer</title>
 </head>
 <body>
-    <img id="arrowup" src="/img/arrowup.png" alt="arrowup" width="60px" height="60px">
+    <img id="arrowup" class="arrowups visible" src="/img/arrowup.png" alt="arrowup" width="60px" height="60px">
     <div class="fluid-container odd">
         <div class="container p-0">
             <div class="wrapper__main">
@@ -36,12 +36,30 @@
                           <span></span>
                             </a>
                             <div id="menu__nav_mob" class="hidden">
+                                <div class="mob__links">
                                 <a href="#" class="menu__item main__link">главная</a>
                                 <a href="#" class="menu__item about__link">обо мне</a>
                                 <a href="#" class="menu__item skills__link">навыки</a>
                                 <a href="https://github.com/zizz64" target="_blank" class="menu__item">мои работы</a>
                                 <a href="#" class="menu__item contact__link">контакты</a>
-                                <a href="#" id="close__menu_mob"><span></span></a>                                
+                                <a href="#" id="close__menu_mob"><span></span></a>
+                            </div>
+                                <div class="footer">
+                                    <div class="row footer__content d-flex justify-content-around">
+                                        <div class="tg">
+                                            <a href="https://t.me/korovnikovn" target="_blank"><i class="fa-brands fa-telegram fa-2xl"></i>@korovnikovn</a>
+                                        </div>                
+                                        <div class="gmail">
+                                            <a href="mailto:nikw5346@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope fa-2xl"></i>nikw5346@gmail.com</a>
+                                        </div>
+                                        <div class="vk">
+                                            <a href="https://vk.com/korovnikovn56" target="_blank"><i class="fa-brands fa-vk fa-2xl"></i>@korovnikovn56</a>
+                                        </div>
+                                    </div>
+                                    <div class="copyright">
+                                        <p>© 2022 Nikita Korovnikov.</p>
+                                    </div>
+                                </div>                                
                             </div>                            
                         </div>                        
                     </nav> 
@@ -131,7 +149,7 @@
             </section>
         </div>
     </div>
-    <footer>
+    <footer id="footer">
         <div class="container p-0 footer__height">
             <div class="footer">
                 <div class="section__title">

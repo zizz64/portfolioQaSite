@@ -1,20 +1,27 @@
 $(document).ready(function(){
 	$('#menu-btn').click(function(){
 		$('#menu__nav_mob').toggleClass('hidden visible');
+        $('html').addClass('hidden-overflow');  
+        $('.arrowups').toggleClass('visible hidden');       
 	});
 });
 
 $(document).ready(function(){
 	$('#close__menu_mob').click(function(){
 		$('#menu__nav_mob').toggleClass('hidden visible');
+        $('html').removeClass('hidden-overflow');
+        $('.arrowups').toggleClass('visible hidden'); 
 	});
 });
 
 $(document).ready(function(){
 	$('.menu__item').click(function(){
 		$('#menu__nav_mob').toggleClass('hidden visible');
+        $('html').removeClass('hidden-overflow');
+        $('.arrowups').toggleClass('visible hidden'); 
 	});
 });
+
 
 $(".main__link").click(function() { 
     $('html, body').animate({
@@ -36,7 +43,7 @@ $(".main__link").click(function() {
 
    $(".contact__link").click(function() {
     $('html, body').animate({
-    scrollTop: $(".footer__content").offset().top   
+    scrollTop: $("#footer").offset().top   
     }, 1000); 
    });
 

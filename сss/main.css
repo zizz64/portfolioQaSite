@@ -51,13 +51,19 @@ body {
 #arrowup {
   position: fixed;
   bottom: 1%;
-  left: 100px;
+  right: 50px;
   height: 60px;
   width: 60px;
   z-index: 2;
   cursor: pointer;
 }
 
+@media screen and (max-width: 1120px) {
+  #arrowup {
+    height: 40px;
+    width: 40px;
+  }
+}
 @media screen and (max-width: 768px) {
   .arrowup {
     position: fixed;
@@ -134,25 +140,32 @@ body {
   width: 60%;
 }
 
-#menu__nav_mob {
-  position: absolute;
+.mob__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  padding-top: 15px;
+}
+
+#menu__nav_mob {
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 200px;
   top: 0px;
   right: 0px;
   z-index: 1;
-  width: 200px;
+  min-width: 100%;
   min-height: 100%;
   background-color: #fff;
-  -webkit-transition: all ease 1s;
-  -o-transition: all ease 1s;
-  transition: all ease 1s;
 }
 #menu__nav_mob a {
   padding: 8px 5px;
@@ -185,6 +198,10 @@ body {
 
 .hidden {
   display: none;
+}
+
+.hidden-overflow {
+  overflow: hidden;
 }
 
 .visible {
@@ -472,7 +489,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .about__content {
-    margin-top: 7rem;
+    margin: 0 0 2rem 0;
   }
 }
 .firstcol {
@@ -480,6 +497,11 @@ body {
   overflow: hidden;
 }
 
+@media screen and (max-width: 479px) {
+  .firstcol {
+    margin-bottom: 2rem;
+  }
+}
 .box {
   width: 100%;
   height: 42.6875rem;
@@ -488,6 +510,13 @@ body {
   background-size: 100%;
 }
 
+@media screen and (max-width: 986px) {
+  .box {
+    width: 100%;
+    height: 35rem;
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 768px) {
   .box {
     width: 100%;
@@ -557,6 +586,9 @@ body {
 }
 @media screen and (max-width: 768px) {
   .secondcol {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 0.5rem;
   }
   .secondcol p {
@@ -568,6 +600,9 @@ body {
   .secondcol p {
     padding: 0 1rem;
     margin-bottom: 1.5rem;
+  }
+  .secondcol p:last-child {
+    margin: 0;
   }
 }
 .section__title {
@@ -611,6 +646,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 2rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 479px) {
@@ -618,6 +654,10 @@ body {
     padding: 0 1rem;
   }
 }
+.skills__work {
+  margin-bottom: 1rem;
+}
+
 .footer__height {
   min-height: 100%;
 }
@@ -635,7 +675,7 @@ body {
 }
 
 .footer__content {
-  padding-bottom: 4.5rem;
+  padding-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 479px) {

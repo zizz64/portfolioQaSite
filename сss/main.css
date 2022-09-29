@@ -146,7 +146,7 @@ body {
           flex-direction: column;
 }
 
-#menu__nav_mob {
+.menu__nav_mob {
   position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -163,7 +163,7 @@ body {
   min-height: 100%;
   background-color: #fff;
 }
-#menu__nav_mob a {
+.menu__nav_mob a {
   padding: 8px 5px;
 }
 

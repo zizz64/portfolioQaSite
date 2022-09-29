@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('#menu-btn').click(function(){
 		$('#menu__nav_mob').toggleClass('hidden visible');
         $('html').addClass('hidden-overflow');  
-        $('.arrowups').toggleClass('visible hidden');       
+        $('.arrowups').toggleClass(' visible hidden ');       
 	});
 });
 
@@ -47,10 +47,16 @@ $(".main__link").click(function() {
     }, 1000); 
    });
 
+    $(window).scroll(function() {     
+      if ($(window).scrollTop() > 90) {
+         $('.arrowup').addClass('visible');
+       } else {
+        $('.arrowup').removeClass('visible');
+       }
+     });
+
    $("#arrowup").click(function() { 
     $('html, body').animate({
     scrollTop: $(".main").offset().top   
     }, 500); 
    });
-
-   
